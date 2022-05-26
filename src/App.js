@@ -22,9 +22,11 @@ import {
   LineChart,
 } from './pages';
 import './App.css';
+import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-  const activeMenu = false;
+  const { activeMenu } = useStateContext();
+
   return (
     <div>
       <Router>
