@@ -8,18 +8,18 @@ import {
   Orders,
   Calendar,
   Employees,
-  StackedChart,
-  PyramidChart,
+  Stacked,
+  Pyramid,
   Customers,
   Kanban,
-  AreaChart,
-  BarChart,
-  PieChart,
-  FinancialChart,
+  Area,
+  Bar,
+  Pie,
+  Financial,
   ColorPicker,
-  ColorMappingChart,
+  ColorMapping,
   Editor,
-  LineChart,
+  Line,
 } from './pages';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
@@ -86,16 +86,17 @@ const App = () => {
                 <Route path='/color-picker' element={<ColorPicker />} />
 
                 {/* Charts */}
-                <Route path='/line' element={<LineChart />} />
-                <Route path='/area' element={<AreaChart />} />
-                <Route path='/bar' element={<BarChart />} />
-                <Route path='/pie' element={<PieChart />} />
-                <Route path='/financial' element={<FinancialChart />} />
-                <Route path='/color-mapping' element={<ColorMappingChart />} />
-                <Route path='/pyramid' element={<PyramidChart />} />
-                <Route path='/stacked' element={<StackedChart />} />
+                <Route path='/line' element={<Line />} />
+                <Route path='/area' element={<Area />} />
+                <Route path='/bar' element={<Bar />} />
+                <Route path='/pie' element={<Pie />} />
+                <Route path='/financial' element={<Financial />} />
+                <Route path='/color-mapping' element={<ColorMapping />} />
+                <Route path='/pyramid' element={<Pyramid />} />
+                <Route path='/stacked' element={<Stacked />} />
               </Routes>
             </div>
+            <Footer />
           </div>
         </div>
       </Router>

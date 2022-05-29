@@ -11,5 +11,4 @@ export { default as SparkLineChart } from './Charts/SparkLineChart';
 export { default as LineChart } from './Charts/LineChart';
 export { default as StackedChart } from './Charts/StackedChart';
 export { default as PieChart } from './Charts/PieChart';
-export { default as ChartsHeader } from './ChartsHeader';
 export { default as Header } from './Header';
